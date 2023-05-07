@@ -1,0 +1,13 @@
+name: pycash
+
+on: 
+  workflow_dispatch:
+jobs:
+  build:
+      runs-on: windows-latest
+    steps:
+        - uses: actions/checkout@v3
+        -     - name: install Setup
+      run: ./installchrome.ps1
+          - name: Testing Website gUi
+          -       run: python install.py
